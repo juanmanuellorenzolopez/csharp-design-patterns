@@ -10,9 +10,14 @@ namespace BuilderRecursiveGenerics
     {
         static void Main(string[] args)
         {
-            var employee = new EmployeeInfoBuilder()
+            var employee = EmployeeBuilderDirector
+                .NewEmployee
                 .SetName("Maks")
-                .AtPosition();
+                .AtPosition("Software Developer")
+                .WithSalary(4500)
+                .Build();
+
+            Console.WriteLine(employee);
         }
     }
 }
