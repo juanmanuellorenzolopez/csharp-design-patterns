@@ -17,22 +17,19 @@ namespace BuilderPattern
             _productStockReport = new ProductStockReport();
         }
 
-        public IProductStockReportBuilder BuildHeader()
+        public void BuildHeader()
         {
-            _productStockReport.HeaderPart = $"STOCK REPORT FOR ALL THE PRODUCTS ON DATE: {DateTime.Now}\n";
-            return this;
+            _productStockReport.HeaderPart = $"STOCK REPORT FOR ALL THE PRODUCTS ON DATE: {DateTime.Now}\n";           
         }
 
-        public IProductStockReportBuilder BuildBody()
+        public void BuildBody()
         {
             _productStockReport.BodyPart = string.Join(Environment.NewLine, _products.Select(p => $"Product name: {p.Name}, product price: {p.Price}"));
-            return this;
         }
 
-        public IProductStockReportBuilder BuildFooter()
+        public void BuildFooter()
         {
             _productStockReport.FooterPart = "\nReport provided by the IT_PRODUCTS company.";
-            return this;
         }
 
         public ProductStockReport GetReport()

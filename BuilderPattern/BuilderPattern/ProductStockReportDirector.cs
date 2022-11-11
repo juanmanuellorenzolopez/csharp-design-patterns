@@ -17,10 +17,9 @@ namespace BuilderPattern
 
         public void BuildStockReport()
         {
-            _productStockReportBuilder
-                .BuildHeader()
-                .BuildBody()
-                .BuildFooter();
+            _productStockReportBuilder.BuildHeader();
+            _productStockReportBuilder.BuildBody();
+            _productStockReportBuilder.BuildFooter();
         }
     }
 }

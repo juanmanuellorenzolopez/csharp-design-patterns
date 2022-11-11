@@ -8,9 +8,9 @@ namespace BuilderPattern
 {
     public interface IProductStockReportBuilder
     {
-        IProductStockReportBuilder BuildHeader();
-        IProductStockReportBuilder BuildBody();
-        IProductStockReportBuilder BuildFooter();
+        void BuildHeader();
+        void BuildBody();
+        void BuildFooter();
         ProductStockReport GetReport();
     }
 }
