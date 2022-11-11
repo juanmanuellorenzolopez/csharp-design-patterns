@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace BuilderRecursiveGenerics
 {
-    public class EmployeeInfoBuilder<T>: EmployeeBuilder where T: EmployeeInfoBuilder<T>
+    public class EmployeeInfoBuilder
     {
-        public T SetName(string name)
+        protected Employee employee = new Employee();
+
+        public EmployeeInfoBuilder SetName(string name)
         {
             employee.Name = name;
-            return (T)this;
+            return this;
         }
     }
 }
