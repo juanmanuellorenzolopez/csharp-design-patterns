@@ -15,7 +15,7 @@ namespace Singleton
         {
             Console.WriteLine("Initializing singleton object");
 
-            var elements = File.ReadAllLines("capitals.txt");
+            var elements = File.ReadAllLines("..\\..\\..\\capitals.txt");
             for (int i = 0; i < elements.Length; i+=2)
             {
                 _capitals.Add(elements[i], int.Parse(elements[i + 1]));
