@@ -22,9 +22,9 @@ namespace AdapterPattern
                     .Elements("Manufacturer")
                     .Select(m => new Manufacturer
                                  {
-                                    City = m.Attribute("City").Value,
-                                    Name = m.Attribute("Name").Value,
-                                    Year = Convert.ToInt32(m.Attribute("Year").Value)
+                                    City = m.Element("City").Value,
+                                    Name = m.Element("Name").Value,
+                                    Year = Convert.ToInt32(m.Element("Year").Value)
                                  });
 
             new JsonConverter(manufacturers)

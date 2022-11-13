@@ -13,9 +13,9 @@ namespace AdapterPattern
             var xElement = new XElement("Manufacturers");
             var xAttributes = ManufacturerDataProvider.GetData()
                 .Select(m => new XElement("Manufacturer", 
-                                    new XAttribute("City", m.City),
-                                    new XAttribute("Name", m.Name),
-                                    new XAttribute("Year", m.Year)));
+                                    new XElement("City", m.City),
+                                    new XElement("Name", m.Name),
+                                    new XElement("Year", m.Year)));
 
             xElement.Add(xAttributes);
             xDocument.Add(xElement);
