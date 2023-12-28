@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/VisitorPattern/.vs
+/VisitorPattern/TeamA.TestResults/bin
+/VisitorPattern/TeamA.TestResults/obj
+/VisitorPattern/TeamB.Detectors/bin
+/VisitorPattern/TeamB.Detectors/obj
+/VisitorPattern/TeamC.Application/bin
+/VisitorPattern/TeamC.Application/obj
+/VisitorPattern/VisitorPatternTests/bin
+/VisitorPattern/VisitorPatternTests/obj
