@@ -1,5 +1,4 @@
 ﻿using NUnit.Framework;
-using NUnit.Framework.Legacy;
 using TeamA.TestResults;
 using TeamA.TestResults.Results;
 using TeamB.Detectors.Detectors;
@@ -34,7 +33,7 @@ namespace TeamC.Application.Visitor
                 "CancerDetector - Checking ECG",
                 "HivDetector - Checking ECG",
             };
-            CollectionAssert.AreEquivalent(expectedLogs, logEntries);
+            Assert.That(expectedLogs, Is.EquivalentTo(logEntries));
         }
     }
 }

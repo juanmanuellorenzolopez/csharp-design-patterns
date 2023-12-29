@@ -1,5 +1,4 @@
 ﻿using NUnit.Framework;
-using NUnit.Framework.Legacy;
 
 namespace VisitorPatternTests
 {
@@ -21,7 +20,7 @@ namespace VisitorPatternTests
             UseTheVisitorPattern(elements, visitor);
 
             //assert
-            CollectionAssert.AreEqual("The Ultimate Answer To Everything: 42", sw.ToString());
+            Assert.That("The Ultimate Answer To Everything: 42", Is.EqualTo(sw.ToString()));
 
             static void UseTheVisitorPattern(IVisitableElement[] elements, IVisitor visitor)
             {
