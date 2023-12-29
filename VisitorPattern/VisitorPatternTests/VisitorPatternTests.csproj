@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TeamA.TestResults\TeamA.TestResults.csproj" />
     <ProjectReference Include="..\TeamB.Detectors\TeamB.Detectors.csproj" />
     <ProjectReference Include="..\TeamC.Application\TeamC.Application.csproj" />
   </ItemGroup>
