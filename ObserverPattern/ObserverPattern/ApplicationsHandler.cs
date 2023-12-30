@@ -10,8 +10,8 @@ namespace ObserverPattern
 
         public ApplicationsHandler()
         {
-            _observers = new();
-            Applications = new();
+            _observers = [];
+            Applications = [];
         }
 
         public IDisposable Subscribe(IObserver<Application> observer)

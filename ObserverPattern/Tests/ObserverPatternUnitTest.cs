@@ -25,7 +25,7 @@ namespace Tests
             subscriber.Subscribe(provider);
             provider.AddApplication(new(1, "Sarah"));
             subscriber.Unsubscribe();
-            Assert.IsFalse(subscriber.Applications.Any());
+            Assert.IsFalse(subscriber.Applications.Count != 0);
         }
 
         [TestMethod]
