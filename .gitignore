@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/ObserverPattern/.vs
+/ObserverPattern/ObserverPattern/obj
+/ObserverPattern/Tests/obj
+/ObserverPattern/Tests/bin
+/ObserverPattern/ObserverPattern/bin
+/ObserverPattern/.cr
