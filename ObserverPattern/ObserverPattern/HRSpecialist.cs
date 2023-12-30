@@ -8,7 +8,7 @@ namespace ObserverPattern
     {
         private IDisposable _cancellation;
         public string Name { get; set; } = name;
-        public List<Application> Applications { get; set; } = new();
+        public List<Application> Applications { get; set; } = [];
 
         public virtual void Subscribe(ApplicationsHandler provider)
         {
