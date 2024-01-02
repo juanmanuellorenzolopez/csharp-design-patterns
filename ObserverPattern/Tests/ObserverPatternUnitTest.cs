@@ -13,7 +13,7 @@ namespace Tests
             var provider = new ApplicationsHandler();
             var subscriber = new HRSpecialist("Bill");
             subscriber.Subscribe(provider);
-            provider.AddApplication(new(1,"Sarah"));
+            provider.AddApplication(new(1, "Sarah"));
             Assert.IsTrue(subscriber.Applications.Any(app => app.JobId == 1 && string.Compare(app.ApplicantName, "Sarah") == 0));
         }
 
